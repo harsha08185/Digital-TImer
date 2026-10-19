@@ -1,0 +1,81 @@
+.digital-timer-container {
+  min-height: 100vh;
+  padding: 32px;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+}
+
+.digital-timer-container > h1 {
+  text-align: center;
+}
+
+.timer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.timer-display {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.timer-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-text h1 {
+  color: #00d9b5;
+  margin: 0;
+}
+
+.timer-text p {
+  margin: 4px 0 0;
+  font-weight: bold;
+}
+
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .digital-timer-container {
+    padding: 16px;
+  }
+
+  .timer-display {
+    width: 300px;
+    height: 300px;
+  }
+
+  .timer-content {
+    gap: 24px;
+  }
+}
